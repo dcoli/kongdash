@@ -29,10 +29,10 @@
     "url": "https://github.com/ajaysreedhar/kongdash/issues"
   },
   "homepage": "https://ajaysreedhar.github.io/kongdash/",
-  "devDependencies": {
-    "electron": "^6.0.0"
-  },
   "dependencies": {
     "jsonfile": "^5.0.0"
+  },
+  "devDependencies": {
+    "electron": "^6.0.0"
   }
 }
