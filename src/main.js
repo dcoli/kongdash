@@ -1,12 +1,12 @@
 'use strict';
 
 const APP_NAME = 'KongDash';
-const VERSION = '0.3.0';
+const VERSION = '0.4.0';
 
-const electron  = require('electron');
-const path      = require('path');
+const electron = require('electron');
+const path = require('path');
 const ospath = require('ospath');
-const jsonfile  = require('jsonfile');
+const jsonfile = require('jsonfile');
 
 let absPath = path.dirname(__dirname), configFile = ospath.data() + '/' + APP_NAME + '/config.json';
 let {app, ipcMain, BrowserWindow, Menu} = electron;
