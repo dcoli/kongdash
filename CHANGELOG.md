@@ -1,5 +1,9 @@
 ## v0.3.0
 
+- Support for Kong Admin API v1.2.x
+
+## v0.3.0
+
 - Support for Kong Admin API v0.10.x
 [#14](https://github.com/ajaysreedhar/kongdash/issues/14)
 - New views to manage certificates and upstreams
