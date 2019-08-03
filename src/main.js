@@ -23,6 +23,7 @@ let startMainWindow = function () {
         minWidth: 900,
         icon: absPath + '/kongdash-256x256.png'
     });
+
     mainWindow.loadURL('file://' + absPath + '/src/initialize.html');
 
     /* Debugging
@@ -40,7 +41,7 @@ app.on('ready', () => {
     try {
         appConfig = jsonfile.readFileSync(configFile);
 
-    } catch (e) {
+    } catch (ignored) {
         /* Ignore. Uses default settings. */
     } finally {
         startMainWindow();
