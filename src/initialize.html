@@ -59,7 +59,7 @@ if (typeof module === 'object') {
 }
 
 const {ipcRenderer} = require('electron');
-var kongConfig = ipcRenderer.sendSync('get-config', 'kong');
+const kongConfig = ipcRenderer.sendSync('get-config', 'kong');
 </script>
 
 <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
