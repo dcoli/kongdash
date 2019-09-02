@@ -21,12 +21,15 @@ let startMainWindow = function () {
         title: app.getName(),
         minHeight: 500,
         minWidth: 900,
-        icon: absPath + '/kongdash-256x256.png'
+        icon: absPath + '/kongdash-256x256.png',
+        webPreferences: {
+            nodeIntegration: true
+        }
     });
 
     mainWindow.loadURL('file://' + absPath + '/src/initialize.html');
 
-    /* Debugging
+    //* Debugging
     mainWindow.webContents.openDevTools();
     //*/
 
