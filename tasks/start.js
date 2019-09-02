@@ -1,3 +1,5 @@
+'use strict';
+
 /* eslint-disable no-console */
 module.exports = function (gulp) { 'use strict';
 
