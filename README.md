@@ -24,7 +24,7 @@ cd kongdash-x.y.z-linux-arch
 ./install.sh
 ```
 
-_x.y.z refers to the version number and arch refers to the architecture (ia32 or x64)._
+_x.y.z refers to the version number and arch refers to the architecture. Starting from v0.4.0 only x64 is supported._
 
 #### On Windows
 Simply download the [latest](https://github.com/ajaysreedhar/kongdash/releases) .exe installer and run it.
@@ -58,29 +58,21 @@ Run ESLint
 
 ### Make a release
 
-Linux 32-bit:
+_All builds are 64-bit._
+
+Linux:
 ```shell
-npm run pack:linux32
+npm run pack:linux
 ```
 
-Linux 64-bit:
-```shell
-npm run pack:linux64
-```
-
-Mac OS X (64-bit only):
+Mac OS X:
 ```shell
 npm run pack:osx
 ```
 
-Windows 32-bit:
+Windows:
 ```shell
-npm run pack:windows32
-```
-
-Windows 64-bit:
-```shell
-npm run pack:windows64
+npm run pack:windows
 ```
 
 The packaged application will be moved to release/ directory.
