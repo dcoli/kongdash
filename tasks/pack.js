@@ -35,29 +35,14 @@ module.exports = function (gulp, packageJson) { 'use strict';
         prune: true
     };
 
-    gulp.task('pack-linux32', (next) => {
-        electronPackager(_.extend(RELEASE_SETTINGS, {
-            platform: 'linux',
-            arch: 'ia32'
-        }), next);
-    });
-
-    gulp.task('pack-linux64', (next) => {
+    gulp.task('pack-linux', (next) => {
         electronPackager(_.extend(RELEASE_SETTINGS, {
             platform: 'linux',
             arch: 'x64'
         }), next);
     });
 
-    gulp.task('pack-windows32', (next) => {
-        electronPackager(_.extend(RELEASE_SETTINGS, {
-            platform: 'win32',
-            arch: 'ia32',
-            icon: 'resources/icons/kongdash-256x256.ico'
-        }), next);
-    });
-
-    gulp.task('pack-windows64', (next) => {
+    gulp.task('pack-windows', (next) => {
         electronPackager(_.extend(RELEASE_SETTINGS, {
             platform: 'win32',
             arch: 'x64',
