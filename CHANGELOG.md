@@ -1,3 +1,7 @@
+## v0.4.0
+
+- Removed 32-bit architecture support
+
 ## v0.3.0
 
 - Support for Kong Admin API v1.2.x
