@@ -9,7 +9,7 @@ module.exports = function (gulp, packageJson) { 'use strict';
         name: packageJson.name,
         out: 'release',
         'appVersion': packageJson.version,
-        'appCopyright': 'Copyright (c) 2016 ' + packageJson.author,
+        'appCopyright': 'Copyright (c) 2019 ' + packageJson.author,
         'version-string': {
             ProductName : packageJson.name,
             CompanyName: packageJson.author,
@@ -18,7 +18,7 @@ module.exports = function (gulp, packageJson) { 'use strict';
             ProductVersion : packageJson.version,
             'file-version': packageJson.version,
             'product-version': packageJson.version,
-            LegalCopyright: 'Copyright (c) 2016 ' + packageJson.author
+            LegalCopyright: 'Copyright (c) 2019 ' + packageJson.author
         },
         win32metadata : {
             ProductName : packageJson.name,
@@ -28,7 +28,7 @@ module.exports = function (gulp, packageJson) { 'use strict';
             ProductVersion : packageJson.version,
             'file-version': packageJson.version,
             'product-version': packageJson.version,
-            LegalCopyright: 'Copyright (c) 2016 ' + packageJson.author
+            LegalCopyright: 'Copyright (c) 2019 ' + packageJson.author
         },
         ignore : /.idea|release|resources|tasks|.gitignore|.eslintrc.json|gulpfile.js|screenshot.png|README.md|CHANGELOG.md$/,
         appPath : packageJson.main,
