@@ -30,18 +30,18 @@ form.form { max-width: 400px; margin: 0 auto 0 auto;  }
 
     <form method="POST" action="#" class="form hidden" id="configForm">
     <div class="form__field">
-        <label class="field-label">Admin API URL</label>
-        <div class="field-input"><input data-ng-model="kongConfig.host" type="text" placeholder="Eg: http://localhost:8001" required="required" name="host" /></div>
+        <label class="field-label" for="input_Host">Admin API URL</label>
+        <div class="field-input"><input id="input_Host" data-ng-model="kongConfig.host" type="text" placeholder="Eg: http://localhost:8001" required="required" name="host" /></div>
     </div>
 
     <div class="form__field">
-        <label class="field-label">Username</label>
-        <div class="field-input"><input data-ng-model="kongConfig.username" type="text" placeholder="Optional" name="username" /></div>
+        <label class="field-label" for="input_Username">Username</label>
+        <div class="field-input"><input id="input_Username" data-ng-model="kongConfig.username" type="text" placeholder="Optional" name="username" /></div>
     </div>
 
     <div class="form__field">
-        <label class="field-label">Password</label>
-        <div class="field-input"><input data-ng-model="kongConfig.password" type="password" placeholder="Optional" name="password" /></div>
+        <label class="field-label" for="input_Password">Password</label>
+        <div class="field-input"><input id="input_Password" data-ng-model="kongConfig.password" type="password" placeholder="Optional" name="password" /></div>
     </div>
 
     <div class="form__field align-center"><button type="submit" class="btn success">Connect</button></div>
