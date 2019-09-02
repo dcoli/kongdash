@@ -1,10 +1,10 @@
 'use strict';
 
-/* eslint-disable no-console */
-module.exports = function (gulp) { 'use strict';
+const childProcess = require('child_process');
+const electron = require('electron');
 
-    const childProcess = require('child_process');
-    const electron = require('electron');
+/* eslint-disable no-console */
+module.exports = function (gulp) {
 
     gulp.task('start', (next) => {
         let child = childProcess.spawn(electron, ['./']);
@@ -18,4 +18,5 @@ module.exports = function (gulp) { 'use strict';
             return next(code === 1 ? new Error('Error running run task') : null);
         });
     });
+
 };
