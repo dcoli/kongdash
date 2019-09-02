@@ -1,9 +1,10 @@
+
 /* global app:true ipcRenderer:true kongConfig:true */
 (function (window, angular, app, ipcRenderer, kongConfig) { 'use strict';
-    const controller = 'InitialSetupController';
-    if (typeof app === 'undefined') throw (controller + ': app is undefined');
 
-    app.controller(controller, ['$scope', '$element', '$base64', 'ajax', 'toast',
+    if (typeof app === 'undefined') throw (__filename + ': app is undefined');
+
+    app.controller('InitialSetupController', ['$scope', '$element', '$base64', 'ajax', 'toast',
         function ($scope, $element, $base64, ajax, toast) {
 
         let statusBar = $element.find('footer.footer').children('span');
