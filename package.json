@@ -29,7 +29,7 @@
   "bugs": {
     "url": "https://github.com/ajaysreedhar/kongdash/issues"
   },
-  "homepage": "https://ajaysreedhar.github.io/kongdash/",
+  "homepage": "https://kongdash.xyz",
   "dependencies": {
     "jsonfile": "^5.0.0",
     "ospath": "^1.2.2",
