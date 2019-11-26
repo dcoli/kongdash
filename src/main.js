@@ -18,7 +18,7 @@ let startMainWindow = function () {
         width: 1100,
         height: 580,
         center: true,
-        title: app.getName(),
+        title: app.name,
         minHeight: 500,
         minWidth: 900,
         icon: absPath + '/kongdash-256x256.png',
@@ -29,7 +29,7 @@ let startMainWindow = function () {
 
     mainWindow.loadURL('file://' + absPath + '/src/initialize.html');
 
-    //* Debugging
+    /* Debugging
     mainWindow.webContents.openDevTools();
     //*/
 
@@ -38,7 +38,7 @@ let startMainWindow = function () {
     });
 };
 
-app.setName(APP_NAME);
+app.name = APP_NAME;
 
 app.on('ready', () => {
     try {
@@ -87,7 +87,7 @@ app.on('browser-window-created', (e, window) => {
         }, {
             label: 'About KongDash',
             click: () => {
-                electron.shell.openExternal('https://ajaysreedhar.github.io/kongdash/');
+                electron.shell.openExternal('https://kongdash.xyz');
             }
         }]
     }];

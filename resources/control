@@ -6,7 +6,7 @@ Section: web
 Priority: extra
 Architecture: amd64 [or i386]
 Maintainer: Ajay Sreedhar <ajaysreedhar468@gmail.com>
-Homepage: https://ajaysreedhar.github.io/kongdash/
+Homepage: https://kongdash.xyz
 Description: KongDash
  An elegant desktop client for Kong Admin API.
  - https://github.com/ajaysreedhar/kongdash
