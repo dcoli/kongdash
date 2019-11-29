@@ -7,13 +7,19 @@
     },
     "extends": "eslint:recommended",
     "parserOptions": {
-        "sourceType": "module"
+        "sourceType": "module",
+        "ecmaVersion": 8,
+            "ecmaFeatures": {
+                "experimentalObjectRestSpread": true
+        }
     },
     "rules": {
+        "no-control-regex": "off",
         "linebreak-style": ["warn", "unix"],
         "quotes": ["error", "single"],
         "semi": ["error", "always"],
-        "no-console": ["warn"],
-        "no-unused-vars": ["warn"]
+        "no-console": 0,
+        "no-unused-vars": ["warn"],
+        "no-empty": 0
     }
 }
