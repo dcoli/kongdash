@@ -1,7 +1,7 @@
 'use strict';
 
 const APP_NAME = 'KongDash';
-const VERSION = '0.3.0';
+const VERSION = '1.0.0';
 
 const electron  = require('electron');
 const path      = require('path');
