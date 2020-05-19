@@ -33,7 +33,10 @@
                 headers: { 'Authorization': 'Basic ' + $base64.encode($scope.kongConfig.username + ':' + ($scope.kongConfig.password || ''))}
             };
 
+            angular.element(document.querySelector(".spinner").style.display='block');
+
             ajax.get(config).then(function (response) {
+                angular.element(document.querySelector(".spinner").style.display='none');
                 try {
                     if (typeof response.data !== 'object' || typeof response.data.version === 'undefined') {
                         toast.error('Could not detect Kong Admin API running on the provided URL');
@@ -54,6 +57,7 @@
                 }
 
             }, function (response) {
+                angular.element(document.querySelector(".spinner").style.display='none');
                 if (response.status && parseInt(response.status) === 401 && $scope.kongConfig.username)
                     toast.error('Invalid username or password');
 
@@ -64,6 +68,7 @@
                     toast.error('Could not connect to ' + $scope.kongConfig.host);
             });
 
+            
             return false;
         });
 
